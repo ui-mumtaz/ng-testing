@@ -1,0 +1,18 @@
+.main-table {
+    border-radius: 5px;
+    width: 60%;
+    margin: 0px auto;
+    float: none;
+    margin-top: 2%;
+}
+
+.secondary-table {
+  width: 80%;
+  margin: 0px auto;
+  float: none;
+  margin-top: 2%;
+}
+
+.table>tbody>tr>td {
+  vertical-align: middle;
+}
