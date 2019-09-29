@@ -1,0 +1,10 @@
+<table class="table table-striped main-table">
+  <tr>
+    <th>Name</th>
+    <th class="text-center">Details</th>
+  </tr>
+  <tr *ngFor="let astro of astronauts">
+    <td>{{astro.name}}</td>
+    <td class="text-center"><button (click)="getInfo(astro.name)" class="btn btn-default btn-primary">View Info</button></td>
+  </tr>
+</table>

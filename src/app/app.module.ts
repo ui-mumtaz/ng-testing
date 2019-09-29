@@ -1,22 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { HelperService } from './shared/helper.service';
+
+// import {HttpModule} from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { InfoComponent } from './info/info.component';
-import { TableComponent } from './table/table.component';
+import { AstronautTableComponent } from './astrotable.component';
+import { AstronautInformationComponent } from './astroinfo.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    InfoComponent,
-    TableComponent
-  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HelperService],
+  declarations: [
+    AppComponent,
+    AstronautTableComponent,
+    AstronautInformationComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

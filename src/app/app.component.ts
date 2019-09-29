@@ -5,9 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  public selectedSlug: string;
-  public sendSlug(e: Event) {
-    this.selectedSlug = e.toString();
-  }
-}
+
+export class AppComponent { }
