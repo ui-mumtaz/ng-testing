@@ -16,7 +16,11 @@ export class AstronautInformationComponent implements OnInit {
   constructor(public helperService: HelperService) {}
 
   ngOnInit() {
-   this.helperService.getAstronautsAPI;
+   //this.helperService.getAstronautsAPI;
+   this.helperService.setData.subscribe(x => {
+    // console.log('Inner ', x)
+     this.name = x
+   })
   }
 }
 

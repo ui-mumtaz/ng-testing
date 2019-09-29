@@ -25,8 +25,13 @@ export class AstronautTableComponent implements OnInit {
       }
     })
   }
+
   getInfo(name: string) {
-    console.log(name)
+    //console.log(name)
+      if(name){
+        this.helperService.setData.next(name);
+    }
+   // console.log(name)
   }
 
 }

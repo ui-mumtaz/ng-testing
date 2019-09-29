@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 // import { Http, Response } from '@angular/http';
-import { Subject, Observable } from 'rxjs';
+import { Subject, Observable, BehaviorSubject } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 
@@ -19,6 +19,8 @@ export class HelperService {
   }
 
   setSelectedAstronaut(data: string) {
-    
+    this.selectedName.next(data);
   }
+
+  setData = new BehaviorSubject<any>('');
 }
